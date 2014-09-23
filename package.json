@@ -1,7 +1,7 @@
 {
   "name": "opml2indesign",
   "version": "1.0.0",
-  "description": "'opml2indesign' is a XML stylesheet for translating OPML file into Aodbe InDesign.",
+  "description": "a XSLT and a Gruntfile which convert OPML files into InDesign importable format",
   "main": "Gruntfile.coffee",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
