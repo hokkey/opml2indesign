@@ -1,0 +1,6 @@
+node_modules/
+build/*
+!build/DEMO.xml
+.idea
+# InDesign Lock File
+*.idlk
