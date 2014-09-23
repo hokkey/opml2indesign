@@ -4,7 +4,7 @@
 <title></title>
 </head>
 <body>
-	<outline text="opml2indesign.xsl" _note="opml2indexign.xsl は、OPML形式をInDesign用に整形するXMLスタイルシート(XSL)です。OmniOutliner、Tree、MindNodePro、Scapple等の人気のエディタから出力したOPML形式のデータを、InDesignのドキュメントへ自動組版することができます。&#10;このドキュメントの本文は、実際に src/opml/DEMO.opml をTreeで編集しながら生成しています。">
+	<outline text="opml2indesign.xsl" _note="opml2indexign.xsl は、OPML形式をInDesign用に整形するXMLスタイルシート(XSL)と、便利なタスクを設定したGruntfileでできたツールです。OmniOutliner、Tree、MindNodePro、Scapple等の人気のエディタから出力したOPML形式のデータを、InDesignのドキュメントへ自動組版することができます。&#10;このドキュメントの本文は、実際に src/opml/DEMO.opml をTreeで編集しながら生成しています。">
 		<outline text="使い方">
 			<outline text="クイックスタート" _note="InDesignを使ってXSLTを適用する使い方です。最もシンプルな手順で流し込みが行えます。">
 				<outline text="OPML書類を作成" _note="任意のソフトウェアを使い、OPML形式のファイルを作成します。Tree、MindNodePro、Scappleなどのマインドマッピングツールや、各種アウトラインエディタが対応しています。"/>
