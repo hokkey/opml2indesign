@@ -1,6 +1,6 @@
 # opml2indesign.xsl
 
-opml2indexign.xsl は、OPML形式をInDesign用に整形するXMLスタイルシート(XSL)です。[OmniOutliner](http://www.omnigroup.com/omnioutliner)、[Tree](http://www.topoftree.jp/tree/)、[MindNode](http://mindnode.com/)、[Scapple](https://www.literatureandlatte.com/scapple.php)等の人気のエディタから出力したOPML形式のデータを、InDesignのドキュメントへ自動組版することができます。
+opml2indexign.xsl は、OPML形式をInDesign用に整形するXMLスタイルシート(XSL)と、便利なタスクを設定したGruntfileでできたツールです。[OmniOutliner](http://www.omnigroup.com/omnioutliner)、[Tree](http://www.topoftree.jp/tree/)、[MindNode](http://mindnode.com/)、[Scapple](https://www.literatureandlatte.com/scapple.php)等の人気のエディタから出力したOPML形式のデータを、InDesignのドキュメントへ自動組版することができます。
 
 ## 使い方
 
