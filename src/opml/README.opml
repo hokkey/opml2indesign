@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head>
+<title></title>
+</head>
+<body>
+	<outline text="opml2indesign.xsl" _note="opml2indexign.xsl は、OPML形式をInDesign用に整形するXMLスタイルシート(XSL)です。OmniOutliner、Tree、MindNodePro、Scapple等の人気のエディタから出力したOPML形式のデータを、InDesignのドキュメントへ自動組版することができます。">
+		<outline text="使い方">
+			<outline text="クイックスタート" _note="InDesignを使ってXSLTを適用する使い方です。最もシンプルな手順で流し込みが行えます。">
+				<outline text="OPML書類を作成" _note="任意のソフトウェアを使い、OPML形式のファイルを作成します。Tree、MindNodePro、Scappleなどのマインドマッピングツールや、各種アウトラインエディタが対応しています。"/>
+				<outline text="OPMLファイルの拡張子を.xmlに変更" _note="拡張子を書き換えると、InDesignがXMLとして解釈できるようになります。"/>
+				<outline text="InDesignテンプレートを開く" _note="このInDesignテンプレートには、8レベルの見出しと本文用のスタイルがXML構造にマップ済みで、すぐに流し込みが行えます。"/>
+				<outline text="InDesignでXMLを読み込む" _note="「ファイル &gt; XMLを読み込み...」から、先程拡張子を書き換えたXMLファイルを選択します。この時に「XSLTを適用」をチェックし、opml2indesign.xslをスタイルシートとして適用します。"/>
+			</outline>
+			<outline text="Grunt.jsを使う方法" _note="Grunt.jsを使うことで、拡張子の置き換えやXSLの適用をInDesignの外部で自動処理できます。OPMLを直接エディタで編集しながらInDesignに反映できるため、より原稿の執筆に集中できるワークフローが実現可能です。">
+				<outline text="grunt.jsとxsltprocを使用可能にする" _note="node.jsのモジュールが利用可能な状態にセッティングしてください。xsltprocは、MacOSXであれば標準でインストールされています。"/>
+				<outline text="ディレクトリ src/opml 直下にOPML書類を作成"/>
+				<outline text="gruntを実行" _note="以下のタスクが実行されます。">
+					<outline>
+						<outline text="src/opml 以下のファイルを監視"/>
+						<outline text="変更があった場合は、XSLTを適用して build 以下へ出力"/>
+					</outline>
+				</outline>
+				<outline text="build内に出力されたXMLファイルをInDesignで読み込む" _note="以後、このXMLファイルはOPMLファイルに変更がある度に再生成されます。このファイルにInDesignからリンクを設定することで、情報のリロードを簡単に行うことができるようになります。"/>
+			</outline>
+		</outline>
+		<outline text="トラブルシューティング">
+			<outline text="流し込んだテキストのスタイルがオーバーライド状態になってしまう場合" _note="InDesignの仕様上、フレームグリッドへタグ付きテキストを流し込んだ際、フレームブリッド自体のスタイルが優先的に適用されてしまうようです。以下の対処方法があります。">
+				<outline text="オーバーライドを全消去する場合" _note="テキストフレーム内のテキストを「コマンド+A」ですべて選択し、段落スタイルパレットのメニューから「オーバーライドの消去」を実行します。"/>
+				<outline text="同じXMLファイルを2回読み込む場合" _note="テキストが流し込まれた後、もう一度同じファイルを同じ手順で読み込み直します。2回目の読み込み時に、正しいスタイルが適用されます。"/>
+			</outline>
+		</outline>
+		<outline text="ライセンス" _note="opml2indexign.xslはMITライセンスで配布されます。改変・再配布・商用利用は自由です。&#10;&#10;Copyright (c) 2014 Hori Yuma&#10;Released under the MIT license&#10;http://opensource.org/licenses/mit-license.php"/>
+		<outline text="サンプルレイアウト" _note="以下は、InDesignサンプルテンプレートの流し込みサンプルです。"/>
+	</outline>
+	<outline text="見出しレベル1・見出しレベル1・見出しレベル1">
+		<outline text="見出しレベル2・見出しレベル2・見出しレベル2・見出しレベル2・見出しレベル2・見出しレベル2">
+			<outline text="見出しレベル3・見出しレベル3・見出しレベル3・見出しレベル3・見出しレベル3・見出しレベル3">
+				<outline text="見出しレベル4・見出しレベル4・見出しレベル・見出しレベル4・見出しレベル4・見出しレベル4">
+					<outline text="見出しレベル5・見出しレベル5・見出しレベル5">
+						<outline text="見出しレベル6・見出しレベル6・見出しレベル6">
+							<outline text="見出しレベル7・見出しレベル7・見出しレベル7">
+								<outline text="見出しレベル8・見出しレベル8・見出しレベル8">
+									<outline text="見出しレベル9">
+										<outline text="見出しレベル10">
+											<outline text="見出しレベル11">
+												<outline text="見出しレベル12"/>
+											</outline>
+										</outline>
+									</outline>
+								</outline>
+							</outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		</outline>
+	</outline>
+</body>
+</opml>
