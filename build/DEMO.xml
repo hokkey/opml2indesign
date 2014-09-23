@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <body><h1>opml2indesign.xsl</h1>
+<note>opml2indexign.xsl は、OPML形式をInDesign用に整形するXMLスタイルシート(XSL)です。OmniOutliner、Tree、MindNodePro、Scapple等の人気のエディタから出力したOPML形式のデータを、InDesignのドキュメントへ自動組版することができます。
+このドキュメントの本文は、実際に src/opml/DEMO.opml をTreeで編集しながら生成しています。</note>
+<h2>使い方</h2>
+<h3>クイックスタート</h3>
+<note>InDesignを使ってXSLTを適用する使い方です。最もシンプルな手順で流し込みが行えます。</note>
+<h4>OPML書類を作成</h4>
+<note>任意のソフトウェアを使い、OPML形式のファイルを作成します。Tree、MindNodePro、Scappleなどのマインドマッピングツールや、各種アウトラインエディタが対応しています。</note>
+<h4>OPMLファイルの拡張子を.xmlに変更</h4>
+<note>拡張子を書き換えると、InDesignがXMLとして解釈できるようになります。</note>
+<h4>InDesignテンプレートを開く</h4>
+<note>resources/ 以下のInDesignテンプレートには、8〜12レベルの見出しと本文用のスタイルがXML構造にマップ済みです。CS4のINDD形式か、CS4以降のすべてのバージョンで互換性のあるIDML形式のいずれかを使用できます。</note>
+<h6>a4_eng_cs4.indd, a4_eng_cs4-cc.idml - 英語用のテンプレートです。</h6>
+<h6>a4_jpn_CS4.indd, a4_eng_cs4-dd.idml - 日本語用のテンプレートです。</h6>
+<h4>InDesignでXMLを読み込む</h4>
+<note>「ファイル &gt; XMLを読み込み...」から、先程拡張子を書き換えたXMLファイルを選択します。この時に「XSLTを適用」をチェックし、opml2indesign.xslをスタイルシートとして適用します。</note>
+<h3>Grunt.jsを使う方法</h3>
+<note>Grunt.jsを使うことで、拡張子の置き換えやXSLの適用をInDesignの外部で自動処理できます。OPMLを直接エディタで編集しながらInDesignに反映できるため、より原稿の執筆に集中できるワークフローが実現可能です。</note>
+<h4>grunt.jsとxsltprocを使用可能にする</h4>
+<note>node.jsのモジュールが利用可能な状態にセッティングしてください。xsltprocは、MacOSXであれば標準でインストールされています。</note>
+<h4>ディレクトリ src/opml 直下にOPML書類を作成</h4>
+<h4>gruntを実行</h4>
+<note>以下のタスクが実行されます。</note>
+<h6>src/opml 以下のファイルを監視</h6>
+<h6>変更があった場合は、XSLTを適用して build 以下へ出力</h6>
+<h4>build内に出力されたXMLファイルをInDesignで読み込む</h4>
+<note>この場合では、XSLTを適用せずにそのまま読み込みを行なってください。Gruntが走り続けている間は、OPMLファイルに変更がある度にXMLファイルが再生成されます。このファイルにInDesignからリンクを設定することで、情報のリロードを簡単に行うことができるようになります。</note>
+<h2>トラブルシューティング</h2>
+<h3>流し込んだテキストのスタイルがオーバーライド状態になってしまう場合</h3>
+<note>InDesignの仕様上、フレームグリッドへタグ付きテキストを流し込んだ際、フレームブリッド自体のスタイルが優先的に適用されてしまうようです。以下の対処方法があります。</note>
+<h4>オーバーライドを全消去する場合</h4>
+<note>テキストフレーム内のテキストを「コマンド+A」ですべて選択し、段落スタイルパレットのメニューから「オーバーライドの消去」を実行します。</note>
+<h4>同じXMLファイルを2回読み込む場合</h4>
+<note>テキストが流し込まれた後、もう一度同じファイルを同じ手順で読み込み直します。2回目の読み込み時に、正しいスタイルが適用されます。</note>
+<h2>クレジット</h2>
+<h3>著者</h3>
+<h4>y_hokkey</h4>
+<note>1988年生まれ。多摩グラ中退のグラフィックデザイナー。印刷物／Web／電子書籍／モバイルアプリ／業務用アプリケーションといった分野のデザインに携わっています。
+
+こんなのも作ったりしています。
+http://metroexits.nobody.jp/</note>
+<h3>ライセンス</h3>
+<note>opml2indexign.xslと、それに付属するInDesignテンプレートはMITライセンスで配布されます。改変・再配布・商用利用は自由です。はMITライセンスで配布されます。改変・再配布・商用利用は自由です。
+
+Copyright (c) 2014 y_hokkey
+Released under the MIT license
+http://opensource.org/licenses/mit-license.php</note>
+</body>
+</Root>
