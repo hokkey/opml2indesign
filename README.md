@@ -1,8 +1,8 @@
 # opml2indesign
 
-[イメージ画像](https://github.com/hokkey/opml2indesign/blob/master/images/top.png?raw=true)
+![イメージ画像](https://github.com/hokkey/opml2indesign/blob/master/images/top.png?raw=true)
 
-opml2indexignは、OPML形式をInDesign用に整形するXMLスタイルシート(XSL)と、便利なタスクを設定したGruntfile、セッティング済みのInDesignテンプレートでできたツールです。[OmniOutliner](http://www.omnigroup.com/omnioutliner)、[Tree](http://www.topoftree.jp/tree/)、[MindNode](http://mindnode.com/)、[Scapple](https://www.literatureandlatte.com/scapple.php)等の人気のエディタから出力したOPML形式のデータを、InDesignのドキュメントへ自動組版することができます。
+opml2indexignは、OPML形式を[InDesign](https://www.adobe.com/jp/products/indesign.html)用に整形するXMLスタイルシート(XSL)と、便利なタスクを設定したGruntfile、セッティング済みのInDesignテンプレートでできたツールです。[OmniOutliner](http://www.omnigroup.com/omnioutliner)、[Tree](http://www.topoftree.jp/tree/)、[MindNode](http://mindnode.com/)、[Scapple](https://www.literatureandlatte.com/scapple.php)等の人気のエディタから出力したOPML形式のデータを、InDesignのドキュメントへ自動組版することができます。
 
 ## デモ
 
