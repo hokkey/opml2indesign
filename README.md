@@ -1,6 +1,8 @@
-# opml2indesign.xsl
+# opml2indesign
 
-opml2indexign.xsl は、OPML形式をInDesign用に整形するXMLスタイルシート(XSL)と、便利なタスクを設定したGruntfileでできたツールです。[OmniOutliner](http://www.omnigroup.com/omnioutliner)、[Tree](http://www.topoftree.jp/tree/)、[MindNode](http://mindnode.com/)、[Scapple](https://www.literatureandlatte.com/scapple.php)等の人気のエディタから出力したOPML形式のデータを、InDesignのドキュメントへ自動組版することができます。
+[イメージ画像](https://github.com/hokkey/opml2indesign/blob/master/images/top.png?raw=true)
+
+opml2indexignは、OPML形式をInDesign用に整形するXMLスタイルシート(XSL)と、便利なタスクを設定したGruntfile、セッティング済みのInDesignテンプレートでできたツールです。[OmniOutliner](http://www.omnigroup.com/omnioutliner)、[Tree](http://www.topoftree.jp/tree/)、[MindNode](http://mindnode.com/)、[Scapple](https://www.literatureandlatte.com/scapple.php)等の人気のエディタから出力したOPML形式のデータを、InDesignのドキュメントへ自動組版することができます。
 
 ## デモ
 
@@ -22,12 +24,11 @@ InDesignを使ってXSLTを適用する使い方です。最もシンプルな�
 
 拡張子を書き換えると、InDesignがXMLとして解釈できるようになります。
 
-#### InDesignテンプレートを開く
-
+#### InDesignテンプレートを
 resources/ 以下のInDesignテンプレートには、8〜12レベルの見出しと本文用のスタイルがXML構造にマップ済みです。CS4のINDD形式か、CS4以降のすべてのバージョンで互換性のあるIDML形式のいずれかを使用できます。
 
 * a4_eng_cs4.indd, a4_eng_cs4-cc.idml - 英語用のテンプレートです。
-* a4_jpn_CS4.indd, a4_eng_cs4-dd.idml - 日本語用のテンプレートです。
+* a4_jpn_cs4.indd, a4_eng_cs4-dd.idml - 日本語用のテンプレートです。
 
 #### InDesignでXMLを読み込む
 
@@ -39,7 +40,7 @@ Grunt.jsを使うことで、拡張子の置き換えやXSLの適用をInDesign�
 
 #### grunt.jsとxsltprocを使用可能にする
 
-node.jsのモジュールが利用可能な状態にセッティングしてください。xsltprocは、MacOSXであれば標準でインストールされています。
+$npm install を実行し、依存するnodeモジュールが利用可能な状態にしてください。xsltprocは、MacOSXの場合は標準でインストールされています。
 
 #### ディレクトリ src/opml 直下にOPML書類を作成
 
@@ -73,7 +74,7 @@ InDesignの仕様上、フレームグリッドへタグ付きテキストを流
 
 ### ライセンス
 
-opml2indexign.xslと、それに付属するInDesignテンプレートはMITライセンスで配布されます。改変・再配布・商用利用は自由です。
+opml2indexignはMITライセンスで配布されます。改変・再配布・商用利用は自由です。
 
 
 Copyright (c) 2014 y_hokkey  
@@ -86,5 +87,5 @@ http://opensource.org/licenses/mit-license.php
 
 1988年生まれ。多摩グラ中退のグラフィックデザイナー。印刷物／Web／電子書籍／モバイルアプリ／業務用アプリケーションといった分野のデザインに携わっています。
 
-こんなのも作ったりしています。  
+こんなのも作ってます。
 http://metroexits.nobody.jp/

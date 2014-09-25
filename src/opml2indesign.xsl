@@ -8,7 +8,7 @@
 
   opml2indesign.xsl
 
-  Copyright (c) 2014 Hori Yuma
+  Copyright (c) 2014 y_hokkey
   Released under the MIT license
   http://opensource.org/licenses/mit-license.php
 
